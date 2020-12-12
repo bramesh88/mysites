@@ -1,0 +1,253 @@
+/* body styles inside body*/
+
+body {
+	font-family: Montserrat, Arial, "sans-serif";
+	font-weight: 450;
+	background-color: var(--primary);
+	color: var(--base);
+	transition: color .2s ease-in, background-color .2s ease-in;
+	-webkit-tap-highlight-color: transparent;
+	--link-primary: #f40088;
+	--link-secondary: #fd18fe;
+	--link-tertiary: #a34c6e;
+	--link-muted: #ac607d;
+	--text-on-link: #fff
+}
+
+body ::selection {
+	color: var(--text-on-link);
+	background-color: var(--link-tertiary)
+}
+
+body h1 {
+	font-weight: 800
+}
+
+body h1,
+body h2 {
+	color: var(--base)
+}
+
+body h2 {
+	font-weight: bolder
+}
+
+body h3 {
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: var(--base)
+}
+
+body h4 {
+	opacity: .8
+}
+
+body h4,
+body p {
+	font-size: 1rem;
+	color: var(--contrast)
+}
+
+body a {
+	transition: opacity .4s ease-in-out
+}
+
+body a,
+body a:hover {
+	color: var(--link-primary)
+}
+
+body a:hover {
+	opacity: .7;
+	text-decoration: none
+}
+
+body.light {
+	--primary: #fff;
+	--secondary: #f7fafc;
+	--tertiary: #e2e8f0;
+	--complement: #f8e6ff;
+	--extra: #ededed;
+	--base: #000;
+	--contrast: #171717
+}
+
+body.dark {
+	-webkit-font-smoothing: antialiased;
+	--primary: #000;
+	--secondary: #111;
+	--tertiary: #1b1c1e;
+	--complement: #20002c;
+	--extra: #202229;
+	--base: #fff;
+	--contrast: #f3f3f3
+}
+
+/* section styles inside body*/
+
+.col-lg-4 {
+		flex: 0 0 33.333333%;
+		max-width: 33.333333%
+	}
+	
+	.mt-auto,
+.my-auto {
+	margin-top: auto!important
+}
+
+.mr-auto,
+.mx-auto {
+	margin-right: auto!important
+}
+
+.mb-auto,
+.my-auto {
+	margin-bottom: auto!important
+}
+
+section.subscribeform .img-container img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+	margin: 0 auto;
+	width: 20rem;
+	height: 12rem;
+	border-style: none
+}
+section.contactform .img-container img {
+	display: block;
+	margin: 0 auto;
+	width: 12rem;
+	height: 12rem;
+	border-style: none
+}
+
+section.about .img-container img {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	width: 10rem;
+	height: 10rem;
+	border-style: none;
+	border-radius: 5%
+}
+.card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: #fff;
+	background-clip: border-box;
+	border: 1px solid rgba(0, 0, 0, .125);
+	border-radius: .25rem
+}
+
+.card>hr {
+	margin-right: 0;
+	margin-left: 0
+}
+
+
+
+section.hero .hero-introduction {
+	text-align: center
+}
+
+section.hero .hero-introduction h1 {
+	font-weight: 800;
+	font-size: 4rem;
+	line-height: 5rem
+}
+
+section.hero .hero-introduction p {
+	font-size: 1.15rem
+}
+
+section.hero .hero-button {
+	color: var(--text-on-link);
+	background-color: var(--link-secondary);
+	border-color: var(--link-secondary);
+	font-size: 1.15rem;
+	border-radius: .5rem;
+	font-weight: 700;
+	transition: opacity .5s ease-in-out;
+	padding: 1rem .75rem
+}
+
+section.hero .hero-button:hover {
+	opacity: .7
+}
+
+section.hero .hero-button:active {
+	background-color: var(--link-secondary)!important;
+	border-color: transparent!important
+}
+
+section.hero .list-group {
+	justify-content: center
+}
+
+section.hero .list-group .list-group-item {
+	font-size: 1.75rem;
+	background-color: transparent;
+	border-color: transparent;
+	padding-left: .75rem;
+	padding-right: .75rem
+}
+
+section.hero .list-group .list-group-item a {
+	color: var(--link-secondary)
+}
+
+section.hero .hero-bio .card {
+	border: transparent;
+	text-align: center;
+	background-color: var(--complement);
+	border-radius: 20px;
+	transition: color .2s ease-in, background-color .2s ease-in
+}
+
+section.hero .hero-bio .card .card-body {
+	margin: 25px 0
+}
+
+section.hero .hero-bio .card .icon {
+	width: 6rem;
+	height: 6rem;
+	margin: 0 auto 1rem;
+	text-align: center;
+	display: block;
+	position: relative;
+	border: .3rem solid var(--link-secondary);
+	background: var(--link-secondary);
+	border-radius: 100%
+}
+
+section.hero .hero-bio .card .icon img {
+	border-radius: 100%
+}
+
+section.hero .hero-bio .card p {
+	font-size: .9rem
+}
+
+section.hero span.wave {
+	animation-name: wave-animation;
+	animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+	transform-origin: 70% 70%;
+	display: inline-block
+}
+
+.dots {
+		transition: background-color .5s ease-in-out;
+		height: 5px;
+		width: 5px;
+		background-color: var(--contrast);
+		border-radius: 50%;
+		display: inline-block;
+		margin-bottom: 5px;
+		margin-right: 7px
+	}
+	
